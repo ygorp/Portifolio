@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
 #header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #000015;
+  background: #E6DADA;
+  background: -webkit-linear-gradient(to left, #274046, #E6DADA);
+  background: linear-gradient(to left, #274046, #E6DADA);
   width: 100%;
   height: 60px;
 }
 
 .logo {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   display: none;
 }
@@ -30,18 +39,18 @@
 
 #menu a {
   display: inline-block;
-  color: #FFFFFF;
+  color: #000000;
   margin-left: 60px;
   text-decoration: none;
   font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
 #menu a::after {
   display: block;
   content: '';
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #000000;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
@@ -63,7 +72,6 @@
     flex-direction: column;
     width: 20rem;
     height: 0px;
-    background-color: #000015;
     box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.582);
     position: absolute;
     top: 60px;
@@ -72,6 +80,9 @@
     z-index: 5;
     visibility: hidden;
     overflow-y: hidden;
+    background: #E6DADA;
+    background: -webkit-linear-gradient(to left, #274046, #E6DADA);
+    background: linear-gradient(to left, #274046, #E6DADA);
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
@@ -85,7 +96,8 @@
     padding-top: 40px;
     padding-right: 1rem;
     text-align: end;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid #000;
+    color: #000;
   }
   #btn-mobile {
     display: flex;
@@ -98,7 +110,7 @@
   #hamburguer {
     border-top: 2px solid;
     width: 20px;
-    color: #FFFFFF;
+    color: #000000;
   }
   #hamburguer::after, #hamburguer::before {
     content: '';
