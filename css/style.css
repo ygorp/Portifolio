@@ -15,19 +15,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #E6DADA;
-  background: -webkit-linear-gradient(to left, #274046, #E6DADA);
-  background: linear-gradient(to left, #274046, #E6DADA);
   width: 100%;
   height: 60px;
 }
 
 .logo {
-  color: #000000;
+  color: #FFFFFF;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   display: none;
 }
 
@@ -39,7 +35,7 @@ body {
 
 #menu a {
   display: inline-block;
-  color: #000000;
+  color: #FFFFFF;
   margin-left: 60px;
   text-decoration: none;
   font-size: 25px;
@@ -50,7 +46,7 @@ body {
 #menu a::after {
   display: block;
   content: '';
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #FFFFFF;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
@@ -80,9 +76,6 @@ body {
     z-index: 5;
     visibility: hidden;
     overflow-y: hidden;
-    background: #E6DADA;
-    background: -webkit-linear-gradient(to left, #274046, #E6DADA);
-    background: linear-gradient(to left, #274046, #E6DADA);
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
@@ -96,8 +89,8 @@ body {
     padding-top: 40px;
     padding-right: 1rem;
     text-align: end;
-    border-bottom: 2px solid #000;
-    color: #000;
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
   }
   #btn-mobile {
     display: flex;
@@ -109,13 +102,13 @@ body {
   }
   #hamburguer {
     border-top: 2px solid;
-    width: 20px;
-    color: #000000;
+    width: 30px;
+    color: #FFFFFF;
   }
   #hamburguer::after, #hamburguer::before {
     content: '';
     display: block;
-    width: 20px;
+    width: 30px;
     height: 2px;
     background: currentColor;
     margin-top: 5px;
@@ -132,4 +125,33 @@ body {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+.img-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-about h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+  width: 500px;
+}
+
+.img-about img {
+  width: 800px;
+  margin-top: 40px;
+  border-radius: 8px;
 }
