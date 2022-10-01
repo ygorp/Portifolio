@@ -131,6 +131,9 @@ body {
     transform: rotate(-135deg);
     top: -7px;
   }
+  .img-about h2 {
+    display: none;
+  }
 }
 
 .about {
@@ -196,6 +199,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 @media (max-width: 1372px) {
