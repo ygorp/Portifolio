@@ -59,9 +59,13 @@ body {
 }
 
 @media (max-width: 653px) {
+  #header {
+    border-bottom: 2px solid #FFFFFF;
+  }
   .logo {
     display: block;
     margin-left: -20px;
+    font-size: 20px;
   }
   #menu {
     display: block;
@@ -73,9 +77,10 @@ body {
     top: 60px;
     right: 0rem;
     transition: .8s;
-    z-index: 5;
+    z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
+    background-color: #203A43;
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
@@ -99,6 +104,7 @@ body {
     border: none;
     background: none;
     cursor: pointer;
+    margin-right: -30px;
   }
   #hamburguer {
     border-top: 2px solid;
@@ -132,7 +138,7 @@ body {
   grid-template-columns: 1fr 1fr;
   text-align: center;
   padding: 40px;
-  margin-top: 30px;
+  margin-top: 120px;
 }
 
 .img-about {
@@ -154,4 +160,78 @@ body {
   width: 800px;
   margin-top: 40px;
   border-radius: 8px;
+}
+
+.text-about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-about h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+  width: 500px;
+}
+
+.text-about p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 120px;
+  color: #FFFFFF;
+}
+
+#btn-about {
+  margin-top: 200px;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 1372px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-about {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 810px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-about img {
+    width: 500px;
+  }
+  .text-about {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 512px) {
+  .about {
+    margin-top: 40px;
+  }
+  .img-about h2, .text-about h2 {
+    width: 350px;
+  }
+  .img-about img  {
+    width: 350px;
+  }
+  #btn-about {
+    margin-top: 180px;
+  }
 }
