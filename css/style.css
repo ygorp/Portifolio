@@ -176,6 +176,13 @@ body {
   text-align: center;
 }
 
+.text-about img {
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+
 .text-about h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
@@ -189,12 +196,12 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 120px;
+  margin-top: 20px;
   color: #FFFFFF;
 }
 
 #btn-about {
-  margin-top: 200px;
+  margin-top: 40px;
   border: none;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -233,7 +240,7 @@ body {
   .about {
     margin-top: 40px;
   }
-  .img-about h2, .text-about h2 {
+  .img-about h2, .text-about h2, .tecnologia h2 {
     width: 350px;
   }
   .img-about img  {
@@ -264,6 +271,7 @@ body {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   padding: 10px;
+  text-align: center;
 }
 
 .card {
