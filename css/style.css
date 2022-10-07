@@ -5,10 +5,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-shadow: box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
 body {
   background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
 }
 
 #header {
@@ -154,15 +169,6 @@ body {
   align-items: center;
 }
 
-.img-about h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  padding: 20px;
-  width: 500px;
-}
-
 .img-about img {
   width: 800px;
   margin-top: 40px;
@@ -181,15 +187,6 @@ body {
   height: 220px;
   border-radius: 100%;
   margin-top: 20px;
-}
-
-.text-about h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  padding: 20px;
-  width: 500px;
 }
 
 .text-about p {
@@ -263,17 +260,6 @@ body {
   width: 100%;
 }
 
-.tecnologia h2 {
-  font-family: sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  padding: 20px;
-  width: 500px;
-  text-align: center;
-}
-
 .tecnologia-card {
   display: flex;
   align-items: center;
@@ -290,6 +276,7 @@ body {
   width: 320px;
   height: 320px;
   margin: 2%;
+  border-color: var(--background-shadow);
 }
 
 .card h5 {
