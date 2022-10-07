@@ -240,7 +240,7 @@ body {
   .about {
     margin-top: 40px;
   }
-  .img-about h2, .text-about h2, .tecnologia h2 {
+  .img-about h2, .text-about h2, .tecnologia .tecnologia-texto >h2 {
     width: 350px;
   }
   .img-about img  {
@@ -249,11 +249,8 @@ body {
   #btn-about {
     margin-top: 140px;
   }
-  .tecnologia {
+  .tecnologia-card{
     flex-direction: column;
-  }
-  .card {
-    margin-top: 40px;
   }
 }
 
@@ -261,22 +258,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
   margin-top: 200px;
+  width: 100%;
 }
 
 .tecnologia h2 {
   font-family: sans-serif;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
-  padding: 10px;
+  padding: 20px;
+  width: 500px;
   text-align: center;
+}
+
+.tecnologia-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 811px) {
+  .tecnologia-card {
+    flex-direction: column;
+  }
 }
 
 .card {
   width: 320px;
   height: 320px;
+  margin: 2%;
 }
 
 .card h5 {
