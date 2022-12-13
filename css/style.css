@@ -299,7 +299,7 @@ h2 {
   flex-direction: column;
 }
 
-#btn-link {
+.btn-link {
   border: none;
   background-color: #0F2027;
   border-radius: 8px;
@@ -310,4 +310,5 @@ h2 {
   font-size: 18px;
   font-weight: 500;
   margin-top: 10px;
+  text-decoration: none;
 }
