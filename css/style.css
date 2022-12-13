@@ -237,7 +237,7 @@ h2 {
   .about {
     margin-top: 40px;
   }
-  .img-about h2, .text-about h2, .tecnologia .tecnologia-texto >h2 {
+  .img-about h2, .text-about h2, .tecnologia .tecnologia-texto >h2, .projetos .projetos-texto h2 {
     width: 350px;
   }
   .img-about img  {
@@ -251,7 +251,7 @@ h2 {
   }
 }
 
-.tecnologia {
+.tecnologia, .projetos {
   display: flex;
   align-items: center;
   justify-content: space-around;
