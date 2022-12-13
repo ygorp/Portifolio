@@ -30,10 +30,9 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Tecnologias</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="#tech">Tecnologias</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact-area">Contato</a></li>
 
           <a href="https://github.com/ygorp" target="_blank" class="github"
             ><i class="fa fa-github"></i
@@ -61,7 +60,7 @@
         </div>
       </section>
 
-      <section class="tecnologia">
+      <section id="tech" class="tecnologia">
         <div class="tecnologia-texto">
           <h2>Tecnologias</h2>
         </div>
@@ -97,7 +96,7 @@
         </div>
       </section>
 
-      <section class="projetos">
+      <section id="projects" class="projetos">
         <div class="projetos-texto">
           <h2>Projetos</h2>
         </div>
@@ -129,6 +128,51 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div id="contact-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-title">Ligue para:</span>(27)99203-7927</p>
+              <p><span class="contact-title">Horário:</span>9:00 - 18:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-title">Envie um e-mail:</span>ygor-nogueira@hotmail.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fa fa-instagram"></i>
+              <p><span class="contact-title">Instagram:</span>@ygorpnogueira</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Deixe sua mensagem"></textarea>
+                <input type="submit" value="Enviar" class="main-btn">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a id="portifolio" href="">Ygor Pacheco Nogueira</a> &copy; 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/6215fc3775.js"

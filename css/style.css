@@ -312,3 +312,95 @@ h2 {
   margin-top: 10px;
   text-decoration: none;
 }
+
+/*FOOTER*/
+
+#contact-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main-title {
+  color: #F1F1F1;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.contact-box i {
+  color: #F1F1F1;
+  border: solid 1px #000000;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.contact-title {
+  font-weight: bold;
+  color: #F1F1F1;
+  margin-right: .5rem;
+}
+
+#msg-box p {
+  font-size: 22px;
+  color: #000000;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+
+#contact-form .main-btn {
+  width: 120px;
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 40px;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#contact-form .main-btn:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #F1F1F1;
+}
+
+/*copy*/ 
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+  color: #F1F1F1;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .contact-box p {
+    font-size: 12px;
+  }
+  .contact-title {
+    font-size: 12px;
+    margin-right: .3rem;
+  }
+}
