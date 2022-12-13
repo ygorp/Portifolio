@@ -260,23 +260,24 @@ h2 {
   width: 100%;
 }
 
-.tecnologia-card {
+.tecnologia-card, .projetos-card {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 @media (max-width: 811px) {
-  .tecnologia-card {
+  .tecnologia-card, .projetos-card {
     flex-direction: column;
   }
 }
 
 .card {
   width: 320px;
-  height: 320px;
+  height: 370px;
   margin: 2%;
   border-color: var(--background-shadow);
+  border-radius: 8px;
 }
 
 .card h5 {
@@ -290,4 +291,23 @@ h2 {
 
 .card-img-top {
   height: 180px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-link {
+  border: none;
+  background-color: #0F2027;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
 }

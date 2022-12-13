@@ -26,3 +26,6 @@ btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
 btnAbout.addEventListener('click', orcamento);
+
+//https://loja-homecell.vercel.app/
+//https://projeto-pei-multivix.vercel.app/
